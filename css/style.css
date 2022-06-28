@@ -1,3 +1,87 @@
+*{
+    color:white;
+    text-shadow: 2px 2px 6px black;
+    background: transparent;
+    border-color: transparent;
+}
 .hidden{
     display: none;
+}
+
+input::placeholder{
+    color:white;
+    text-shadow: 2px 2px 6px black;
+}
+
+input[type=text]{
+    border-bottom-color: white;
+    border-bottom-width: 2px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    width: 250px;
+}
+
+input[type=submit] {
+    border-color: white;
+    border-width: 2px;
+    border-radius: 3px;
+}
+
+#contents{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#backgroundImg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#weather{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    height: 20%;
+}
+
+#clock{
+    font-size: 15vmin;
+    height: 10%;
+    width: 100%;
+    text-align: center;
+}
+
+#todo-form{
+    width: 250px;
+}
+
+#todo-list{
+    list-style-type: "- ";
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    margin: 0px;
+    width: 100%;
+    height: 100%;
 }
